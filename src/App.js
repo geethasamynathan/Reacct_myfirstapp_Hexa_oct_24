@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import ItemList from "./itemlist";
+import UserList from "./userlist";
 
 function App() {
+  const name = "Hexaware";
+  const sample = () => {
+    console.log("Button clicked");
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ItemList />
+      <UserList />
+      {/* <header className="App-header">
+        <h2> Hi All welcome {name}</h2>
+        <h3> {450 + 500}</h3>
+        <h3>{"sample" + 900} </h3>
       </header>
+
+      <button onClick={sample}>click me</button> */}
     </div>
   );
 }
